@@ -64,6 +64,7 @@ const Login = () => {
           </button>
           <h4>Or</h4>
           <Link to="/register">Sign Up</Link>
+          <h5>WorkingOn: Responsiveness (For now kindly open in PC only)</h5>
         </form>
       </section>
     </div>
