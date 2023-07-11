@@ -31,6 +31,7 @@ const Header = () => {
         <h2>OAuTH-To-Do</h2>
         <p>Take your Oath now and conquer your dreams....</p>
       </div>
+      <h3>We are constantly upgrading Ourselves!</h3>
       <article>
         <Link to={"/"}>Home</Link>
         <Link to={"/profile"}>Profile</Link>

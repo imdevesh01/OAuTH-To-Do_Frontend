@@ -5,14 +5,22 @@ import Loader from "../components/Loader";
 const Profile = () => {
   const { isAuthenticated, loading, user } = useContext(Context);
 
-  return loading ? (
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
+  
+  return (loading ? (
     <Loader />
   ) : (
     <div>
-      <h1>{user.name}</h1>
-      <p>{user.email}</p>
+      <br />
+      <button onClick={refreshPage} >Fetch your latest details !</button>
+      <h1>{user?.name}</h1>
+      <p>{user?.email}</p>
     </div>
-  );
+  ));
+
 };
 
 export default Profile;
