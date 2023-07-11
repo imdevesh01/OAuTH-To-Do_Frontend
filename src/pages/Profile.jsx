@@ -4,9 +4,11 @@ import Loader from "../components/Loader";
 
 const Profile = () => {
   const { isAuthenticated, loading, user } = useContext(Context);
+  let isPresssed = false;
 
   function refreshPage() {
     window.location.reload(false);
+    isPresssed = true;
   }
 
   

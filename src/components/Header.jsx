@@ -34,7 +34,8 @@ const Header = () => {
       <h3>We are constantly upgrading Ourselves!</h3>
       <article>
         <Link to={"/"}>Home</Link>
-        <Link to={"/profile"}>Profile</Link>
+        {/* in Development phase */}
+        {/* <Link to={"/profile"}>Profile</Link> */}
         {isAuthenticated ? (
           <button disabled={loading} onClick={logoutHandler} className="btn">
             Logout
