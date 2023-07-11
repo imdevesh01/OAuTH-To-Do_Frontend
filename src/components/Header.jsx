@@ -25,13 +25,18 @@ const Header = () => {
     }
   };
 
+  const quotes = ["You may delay, but time will not !","A year from now you may wish you had started today !","Don’t let yesterday take up too much of today !","Never put off for tomorrow, what you can do today !","Opportunities don't happen, you create them !"]
+
+  const ran = Math.floor(Math.random()*quotes.length);
+
+  // document.getElementById("quo").innerHTML = quotes[ran];
   return (
     <nav className="header">
       <div>
         <h2>OAuTH-To-Do</h2>
-        <p>Take your Oath now and conquer your dreams....</p>
+        <p>Take Oath and Conquer your Dreams....</p>
       </div>
-      <h3>We are constantly upgrading Ourselves!</h3>
+    <h3 id="quo" >{quotes[ran]}</h3>
       <article>
         <Link to={"/"}>Home</Link>
         {/* in Development phase */}
