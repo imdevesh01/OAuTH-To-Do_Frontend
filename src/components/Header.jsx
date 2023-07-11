@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <nav className="header">
       <div>
-        <h2>OAuTH-To-Do</h2>
+        <h2>OAuTH-ToDo</h2>
         <p>Take Oath and Conquer your Dreams....</p>
       </div>
     <h3 id="quo" >{quotes[ran]}</h3>
