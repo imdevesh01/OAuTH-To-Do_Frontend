@@ -9,7 +9,7 @@ const Profile = () => {
     <Loader />
   ) : (
     <div>
-      <h1>Hey {user.name}....How's it going :)</h1><br />
+      <h1>{user.name}</h1>
       <p>{user.email}</p>
     </div>
   );
